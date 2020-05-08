@@ -7,3 +7,114 @@ Rules of Hooks
  called within react functional components and not any regular javascript functional
 
 Updating state based on the previous state, pass a function to a state setter
+A state variable can be a string, boolean, object or an , number
+Spread Operator ES6
+
+{% comment %} Summary {% endcomment %}
+
+--USESTATE---
+-useState hook lets one add state to a functional component--calling it inside a functional component
+creates a single piece of state
+-In classes, the state is always an object which allows for storing of properties
+-useState hook, the state doesnt have to be an object;- can be a number, array, boolean
+ - returns an array with two elements, state(current value of the state) and setState(state setter function)
+
+-Incase a new state value depends on a previous state value, a function can be passed to the setter function
+  -The setter state accepts the previous state as its argument
+
+-When dealing with objects or arrays, spread the state variable and then call the setter function
+
+component - part of the UI
+          - are usable
+          -can contain other components
+          -placed in a js file
+          types
+          - functional components
+        - class components
+
+          --stateless
+          functional components are basically javascript functions-html describes the UI
+          can optionally receive an object of properties(props ) return HTML(JSX)
+
+
+
+          class component are es6 classes that extend the component class
+          must contain a render method
+          optionally receive props 
+          can maintain a private internal state i.e can contain  a private information
+
+
+          {% comment %} Named export {% endcomment %}
+          component has to be exported with the same name
+
+          Functional components
+          -Absence of this keyword
+          -Solution without using state
+          -without any complicated logic mainly responsible for the UI
+
+          Class components
+          -Maintain their own private data
+          -Provide life cycle hooks
+
+JSX 
+-javascript XML - contains tag name, attributes and children
+                - makes code simpler and elegant
+                - transpiles to pure js 
+                Differences
+
+                -class -> className
+                -for -> htmlFor
+
+                -camelCase property naming
+                ..onclick -> ..onClick
+                ..tabindex -> tabIndex
+
+
+React Fire: Modernizing React DOM ---checkout
+
+props - optional input that the component can take
+      - allows component to be dynamic
+      to specify apps for components they are specified as attributes
+
+      if properties that are going to be passed are known, they can be passed as attributes
+      else if its a dynamic content pass it in between the component definition
+
+      properties are mentioned as attributes during the component invocation
+
+      unlike the functional component where props is specified, in class components, the props are 
+      available through this.props which is reserved
+      props are immutable - their value cannot be changed
+
+state -- managed within the component
+         component has full control to change the state
+         can be accessed by useState Hook - in functional component
+                            this.state - in class components
+      -- is an object that is privately maintained inside a component
+setState --accepts an object which is a new state of the object
+
+DOs 
+  -never modify a state directly instead use setState
+  -calls to setState are asynchronous
+  callback function is passed to the setState
+  whenever a code needs to be executed after the state has been changed, do not place the code after 
+  the setState instead place it as a callback function declared as a second parameter
+  updating a state based on the previous state, pass a function as an argument instead of an object
+  the second parameter to the function is the props .
+
+  setState - the first parameter is an object which sets the state value,
+        
+
+
+        destructuring 
+        functional components
+        2 ways - destructure in the function itself
+              - destructuring in the function body
+
+        class components
+        - props are destructured in the render method
+
+        React Events
+        - are named using camelCase
+        -with JSX pass a function as the event handler rather than a string
+
+        eventHandler is a function and not a function call--do not add the paranthesis
