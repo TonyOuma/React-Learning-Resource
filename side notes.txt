@@ -131,3 +131,28 @@ HOC --  Higher Order Component
 Context API
       -provides a way to pass data through the component tree without having to pass props down manually
       at every level
+
+      Steps involved in the Context
+      1. Create the Context using createContext() make sure to export the provider and consumer
+      2. Provide a context::: value at the top component tree include the provider and include the value attribute
+      3. Consume the context value:::: use the consumer component and passin a function as its child 
+
+
+      Note:: 1. a default value can be set to the context, set while creating the context, passed as a parameter in the createContext
+                  only used when the component does not have a matching provider in the component tree
+
+                  contextType -- can also Consume the context value used as an alternative to the consumer
+                                 Limitations
+                                    -Only works with class components
+                                    - One can only subscribe to a single context using contextType
+
+
+                                    {% comment %} Consuming Multiple Contexts {% endcomment %}
+
+
+
+Conditional Rendering
+      1. if/else
+      2. Element variables
+      3. Ternary variables
+      4. Short circuit Operator

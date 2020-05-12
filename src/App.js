@@ -19,12 +19,15 @@ import "./App.css";
 // import Click from "./components/ClassClick";
 // import ClickCounter from './components/ClickCounter'
 // import HoverCount from './components/HoverCount'
-import ComponentC from './components2/ComponentC'
-import { UserProvider } from "./components2/userContext";
+// import ComponentC from './components2/ComponentC'
+// import { UserProvider } from "./components2/userContext";
+import UserGreeting from './components2/UserGreeting'
 
 function App() {
   return (
     <div className="App">
+
+      <UserGreeting />
       {/* <FunctionClick /> */}
       {/* <Click /> */}
       {/* <ClassCounter /> */}
@@ -54,10 +57,10 @@ function App() {
       {/* <NewCount /> */}
       {/* <ClickCounter />
       <HoverCount /> */}
-
+{/* 
       <UserProvider value = "Tony">
         <ComponentC />
-      </UserProvider>
+      </UserProvider> */}
     </div>
   );
 }
