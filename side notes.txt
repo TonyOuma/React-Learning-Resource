@@ -153,6 +153,24 @@ Context API
 
 Conditional Rendering
       1. if/else
+      Note: if/else statements do not work in JSX as they are just functional calls for object construction
+
       2. Element variables
-      3. Ternary variables
+            Use javascript variables to store elements
+            Helps in conditional rendering of the entire component or only a part of the component
+      3. Ternary variables 
+            uses the Ternary conditional Operator
+            can be used within the JSX
       4. Short circuit Operator
+            used if something/nothing needs to be rendered
+
+            condition && doStatement -- evaluates the LHS of the Operator if true evaluates the RHS
+                                          if the LHS evaluates to false the RHS will not be executed
+
+List Rendering
+      (Recall): map()-creates a new array with results of calling a provided function
+                  on every element in the calling way
+
+
+
+      

@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import NameList from "./components2/NameList";
 // import "./components/ClassCounter";
 // import ClassCounter from "./components/ClassCounter";
 // import ClassCounterTwo from "./components/ClassCounterTwo";
@@ -21,13 +22,15 @@ import "./App.css";
 // import HoverCount from './components/HoverCount'
 // import ComponentC from './components2/ComponentC'
 // import { UserProvider } from "./components2/userContext";
-import UserGreeting from './components2/UserGreeting'
+// import UserGreeting from './components2/UserGreeting'
+// import NameList from './components2/NameList'
 
 function App() {
   return (
     <div className="App">
 
-      <UserGreeting />
+<NameList />
+      {/* <UserGreeting /> */}
       {/* <FunctionClick /> */}
       {/* <Click /> */}
       {/* <ClassCounter /> */}
