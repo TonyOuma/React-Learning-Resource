@@ -22,9 +22,9 @@ function NameList() {
             genre: 'Reggae'
         }
     ]
-const personList = person.map(person => 
-    <Person person={person}/>
-    )
+const personList = person.map((person) => (
+  <Person key={person.id} person={person} />
+));
     return (
         <div>
             {

@@ -172,5 +172,13 @@ List Rendering
                   on every element in the calling way
 
 
+Lists and Keys
+      should be added when creating list of elements
+      Note: key props are not accessible in the child components
+            should not be used to render any data
+      Key - help react to identify which items has been added, changed or removed
+            plays a role in UI updates efficiently
+            gives the elements a stable identity
 
-      
+fix(update unique key prop)
+to each child in the array
