@@ -118,3 +118,16 @@ DOs
         -with JSX pass a function as the event handler rather than a string
 
         eventHandler is a function and not a function call--do not add the paranthesis
+
+HOC --  Higher Order Component
+        A pattern where a function takes a component as an argument and returns a new component
+
+        syntax
+        const EnhancedComponent = higherOrderComponent(originalComponent)
+
+        when creating HOCs pass down the other props with {...this.props}
+
+
+Context API
+      -provides a way to pass data through the component tree without having to pass props down manually
+      at every level
